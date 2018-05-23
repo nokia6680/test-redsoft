@@ -1,9 +1,7 @@
-﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Тестовое задание [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Артур Баллод](https://up.htmlacademy.ru/adaptive/12/user/86012).
-* Наставник: `Мигаева Анастасия`.
+* Выполнил: [Артур Баллод].
 
----
 
 **Обратите внимание на файл:**
 
