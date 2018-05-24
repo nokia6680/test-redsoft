@@ -1,0 +1,76 @@
+.list-item {
+  padding-right: 17px;
+  margin-right: 63px;
+
+  position: relative;
+
+  padding-top: 25px;
+
+  cursor: pointer;
+
+  &:not(:last-of-type)::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/arrow-down.png');
+    width: 9px;
+    height: 5px;
+
+    right: 0;
+    top: 35px;
+  }
+
+  &__title {
+    font: {
+      family: $base-font;
+      size: 16px;
+      weight: 400;
+    }
+
+    color: $text-black;
+    line-height: 1.2;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  &:hover .list-submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    cursor: pointer;
+
+    z-index: 10;
+  }
+
+  &:active .list-submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    cursor: pointer;
+
+    z-index: 10;
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: $hover-color;
+
+    top: 0;
+    left: 0;
+
+    transition: .3s ease-in;
+  }
+}

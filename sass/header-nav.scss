@@ -1,0 +1,15 @@
+.header-nav {
+  @include container;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+
+  padding-bottom: 30px;
+
+  &__logo {
+    align-self: center;
+  }
+}

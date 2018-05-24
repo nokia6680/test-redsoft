@@ -1,0 +1,44 @@
+.intro-video {
+  background-color: $bg-black;
+
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 100px;
+
+  width: 43%;
+
+  &__link {
+    font: {
+      family: $base-font;
+      size: 24px;
+      weight: 400;
+    }
+
+    color: $text-white;
+    line-height: 54px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../img/arrow-right.png');
+      background-repeat: no-repeat;
+      background-size: 29px 18px;
+
+      width: 29px;
+      height: 18px;
+
+      top: 6px;
+      right: -80px;
+    }
+
+    &:hover::after {
+      right: -100px;
+      transition: .3s ease-out;
+    }
+  }
+}

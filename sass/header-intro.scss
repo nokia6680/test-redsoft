@@ -1,0 +1,34 @@
+.header-intro {
+  width: 100%;
+  background-image: url('../img/intro-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top -100px;
+  background-size: 1920px 1080px;
+
+  position: relative;
+
+  z-index: 2;
+
+  &__title {
+    margin-top: 190px;
+    margin-bottom: 100px;
+
+    width: 860px;
+  }
+
+  &__video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__wrapper {
+    @include container;
+
+    z-index: 2;
+  }
+
+  &__btn {
+    @include btn;
+  }
+}
