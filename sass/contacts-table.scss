@@ -1,0 +1,120 @@
+.contacts-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 560px;
+
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+
+  margin-top: 160px;
+  margin-bottom: 180px;
+  margin-right: 0;
+  margin-left: auto;
+
+  background-color: $bg-white;
+
+  box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+  -webkit-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__description {
+    padding-left: 40px;
+
+    position: relative;
+
+    font: {
+      family: $base-font;
+      size: 18px;
+      weight: 400;
+    }
+
+    color: $text-black;
+    line-height: 27px;
+
+    margin-bottom: 0;
+    margin-top: 25px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &--address::before {
+      position: absolute;
+      content: '';
+
+      width: 13px;
+      height: 16px;
+
+      background-image: url('../img/placeholder.png');
+      background-repeat: no-repeat;
+      background-size: 13px 16px;
+
+      left: 0;
+      top: 6px;
+    }
+
+    &--phone::before {
+      position: absolute;
+      content: '';
+
+      width: 15px;
+      height: 16px;
+
+      background-image: url('../img/phone.png');
+      background-repeat: no-repeat;
+      background-size: 15px 16px;
+
+      left: 0;
+      top: 6px;
+    }
+
+    &--email::before {
+      position: absolute;
+      content: '';
+
+      width: 16px;
+      height: 12px;
+
+      background-image: url('../img/envelope.png');
+      background-repeat: no-repeat;
+      background-size: 16px 12px;
+
+      left: 0;
+      top: 9px;
+    }
+
+    &--schedule::before {
+      position: absolute;
+      content: '';
+
+      width: 16px;
+      height: 15px;
+
+      background-image: url('../img/house.png');
+      background-repeat: no-repeat;
+      background-size: 16px 15px;
+
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  &__mail,
+  &__phone {
+    text-decoration: none;
+    color: $text-black;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}

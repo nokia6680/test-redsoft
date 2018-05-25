@@ -1,0 +1,17 @@
+.main-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-image: url('../img/map.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto;
+
+  width: 100%;
+
+  &__wrapper {
+    @include container;
+  }
+}

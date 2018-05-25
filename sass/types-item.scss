@@ -1,0 +1,110 @@
+.types-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 640px;
+  height: 440px;
+
+  padding: 50px 60px 130px 100px;
+
+  background-color: $bg-gray;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: none;
+
+    width: 640px;
+    height: 440px;
+
+    background-image: url('../img/type-hover.png');
+    background-repeat: no-repeat;
+
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: none;
+
+    width: 570px;
+    height: 380px;
+
+    background-color: transparent;
+    border: 2px solid $border-white;
+
+    top: 28px;
+    left: 30px;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    @include animation;
+
+    display: block;
+    animation: fade ease-in 0.5s;
+  }
+
+  &:hover {
+    @include animation;
+
+    animation: fade ease-in 0.5s;
+    box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+
+    .types-item__nr,
+    .types-item__title,
+    .types-item__description {
+      @include animation;
+
+      color: $text-white;
+      animation: fade ease-in 0.5s;
+    }
+  }
+
+  &__nr {
+    font: {
+      family: $base-font;
+      size: 108px;
+      weight: 400;
+    }
+
+    color: $text-gray;
+    line-height: 64px;
+
+    margin: 0;
+
+    align-self: flex-end;
+    z-index: 10;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    z-index: 10;
+  }
+
+  &__description {
+    font: {
+      family: $base-font;
+      size: 16px;
+      weight: 400;
+    }
+
+    color: $text-black;
+    line-height: 32px;
+
+    margin: 0;
+
+    letter-spacing: 0;
+
+    z-index: 10;
+  }
+}

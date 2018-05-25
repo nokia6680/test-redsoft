@@ -1,0 +1,16 @@
+.main-activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+
+  padding-top: 90px;
+
+  &__title {
+    @include container;
+
+    letter-spacing: 7.2px;
+  }
+}

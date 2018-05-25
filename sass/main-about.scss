@@ -1,0 +1,111 @@
+.main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+
+  margin-top: 200px;
+  margin-bottom: 300px;
+  
+  padding-bottom: 170px;
+
+  background-color: $bg-gray;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    width: 740px;
+    height: 660px;
+
+    top: -80px;
+    right: 0;
+    left: auto;
+
+    background-image: url('../img/about-1.jpg');
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+
+    z-index: 10;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    width: 560px;
+    height: 400px;
+
+    bottom: -300px;
+    right: 380px;
+
+    background-image: url('../img/about-2.jpg');
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 55px 1px rgba(0,0,0,0.21);
+
+    z-index: 10;
+  }
+
+  &__wrapper {
+    @include container;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-right: 460px;
+  }
+
+  &__title {
+    @extend .main-types__title;
+
+    margin-top: 60px;
+  }
+
+  &__note {
+    @extend .main-types__note;
+
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    font: {
+      family: $base-font;
+      size: $secondary-title;
+      weight: 400;
+    }
+
+    color: $text-black;
+    line-height: 48px;
+  }
+
+  &__notation {
+    font: {
+      family: $base-font;
+      size: 16px;
+      weight: 400;
+    }
+
+    color: $text-black;
+    line-height: 32px;
+
+    margin: 0;
+  }
+
+  &__details {
+    bottom: 0;
+    left: 0;
+  }
+}

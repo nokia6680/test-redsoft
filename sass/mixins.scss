@@ -62,3 +62,78 @@
     transition: .4s ease-out;
   }
 }
+
+@mixin btn-white {
+  background-color: transparent;
+  border: 2px solid $border-color;
+  border-radius: 30px;
+
+  font: {
+    family: $base-font;
+    size: $btn-size;
+    weight: 400;
+  }
+
+  color: $text-blue;
+  line-height: 1.2;
+
+  text-align: center;
+  vertical-align: middle;
+
+  padding-left: 34px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-decoration: none;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 2px;
+    background-color: $hover-color;
+
+    right: -23px;
+    top: 20px;
+  }
+
+  &:hover::after {
+    right: -33px;
+    transition: .3s ease-in;
+    background-color: $hover-white-color;
+  }
+
+  &:active::after {
+    right: -23px;
+    transition: .3s ease-out;
+    background-color: $active-color;
+  }
+
+  &:hover {
+    border-color: $hover-white-color;
+    transition: .4s ease-out;
+  }
+
+  &:active {
+    border-color: $active-color;
+    transition: .4s ease-out;
+  }
+}
+
+@mixin animation {
+  @-moz-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+  }
+  @-webkit-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+  }
+}

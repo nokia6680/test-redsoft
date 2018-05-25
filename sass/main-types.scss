@@ -1,0 +1,23 @@
+.main-types {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+  margin-top: 100px;
+
+  &__title {
+    @include container;
+
+    letter-spacing: 7.2px;
+    margin-bottom: 60px;
+  }
+
+  &__note {
+    @extend .main-types__title;
+
+    color: $text-blue;
+    font-weight: 400;
+  }
+}

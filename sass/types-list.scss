@@ -1,0 +1,14 @@
+.types-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  flex-wrap: nowrap;
+
+  width: 100%;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
