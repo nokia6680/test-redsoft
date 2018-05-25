@@ -8,7 +8,7 @@
 
   margin-top: 200px;
   margin-bottom: 300px;
-  
+
   padding-bottom: 170px;
 
   background-color: $bg-gray;
@@ -89,6 +89,8 @@
 
     color: $text-black;
     line-height: 48px;
+
+    width: 700px;
   }
 
   &__notation {
@@ -102,6 +104,8 @@
     line-height: 32px;
 
     margin: 0;
+
+    width: 700px;
   }
 
   &__details {

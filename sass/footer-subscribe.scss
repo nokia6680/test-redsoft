@@ -21,6 +21,8 @@
 
     padding-left: 60px;
     margin-bottom: 15px;
+
+    cursor: pointer;
   }
 
   &__input {
@@ -29,6 +31,8 @@
     background-color: transparent;
     border: 1px solid #e6e6e6;
     border-radius: 30px;
+
+    height: 48px;
 
     font: {
       family: $base-font;
@@ -41,6 +45,8 @@
     line-height: 44px;
 
     position: relative;
+
+    cursor: text;
   }
 
   &__btn {
